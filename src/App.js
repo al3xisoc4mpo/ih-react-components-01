@@ -1,8 +1,9 @@
 // 1. IMPORTACIONES
-import logo from "./logo.svg";
+// import logo from "./logo.svg";
 import "./App.css";
-import Header from "./Header";
-import Footer from "./Footer";
+import Header from "./components/Layout/Header";
+import Footer from "./components/Layout/Footer";
+import Main from "./components/Main/Main"
 
 // 2. FUNCIÓN (COMPONENTE)
 
@@ -26,6 +27,7 @@ function App() {
   return (
     <div className="App">
       <Header nombre={name}/>
+      <Main />
       <Footer palabra={word}/>
     </div>
   );
